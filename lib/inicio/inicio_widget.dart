@@ -88,8 +88,12 @@ class _InicioWidgetState extends State<InicioWidget> {
                             labelStyle: TextStyle(),
                             indicatorColor: Colors.white,
                             tabs: [
-                              Tab(),
-                              Tab(),
+                              Tab(
+                                text: 'Iniciar Sesión',
+                              ),
+                              Tab(
+                                text: 'Registrarse',
+                              ),
                             ],
                           ),
                           Expanded(
@@ -343,6 +347,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                                             controller: emailAddressController,
                                             obscureText: false,
                                             decoration: InputDecoration(
+                                              labelText: 'Correo electrónico',
                                               labelStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyText1
@@ -403,6 +408,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                                             controller: passwordController,
                                             obscureText: !passwordVisibility,
                                             decoration: InputDecoration(
+                                              labelText: 'Contraseña',
                                               labelStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyText1
@@ -482,6 +488,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                                             obscureText:
                                                 !passwordConfirmVisibility,
                                             decoration: InputDecoration(
+                                              labelText: 'Confirmar contraseña',
                                               labelStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyText1
